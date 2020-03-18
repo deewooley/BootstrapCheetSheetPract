@@ -1,18 +1,67 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+<link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Bootstrap Cheat Sheet</title>
+    <style>
+    .navbar{
+      margin-bottom:0;
+      border-radius:0;
+    }
+  </style>
   </head>
   <body>
+<nav class="navbar navbar-inverse">
     <div class = "container">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Bootstrap CheatSheet</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- JUMBOTRON -->
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Welcome To My Website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+  </div>
+</div>
+
     <!--Typography-->
+   <div class="container">
       <h1 class = "page-header">Hello, Wwworld!<small>Secondary Text</small></h1>
 
       <p class  = "lead">Lorem ipsum dolor sit amet, <del>consectetur</del> adipisicing elit, <u>sed</u> do eiusmod <strong>tempor</strong>
@@ -39,6 +88,7 @@
 
       <!--Clear Float-->
     <div class = "clearfix"></div>
+
       <!--Blockquote-->
       <blockquote class = "blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -82,13 +132,14 @@
 <p class = "bg-danger">Hello World</p>
 <p class = "bg-muted">Hello World</p>
 </div>
-
   <div class = "container">
+
     <!--buttons-->
     <button class = "btn btn-default">Default</button>
     <a href = "#" class = "btn btn-default" role="button">Link</a>
     <input type = "submit" class = "btn btn-default" value = "submit">
 <br>
+
     <!--Contextual Buttons-->
     <button class = "btn btn-default">Default</button>
     <button class = "btn btn-primary">Primary</button>
@@ -214,7 +265,7 @@
 
 <!--Panels -->
 <div class = "container">
-  <div class = "panel panel-default">
+  <div class = "panel panel-primary">
   <div class = "panel-heading">
     <h3 class = "panel-title">Panel title</h3>
   </div>
@@ -223,10 +274,129 @@
   </div>
   <div class = "panel-footer">Panel Footer</div>
 </div>
+
+<hr>
+<!--wells-->
+<div class = "well">Hello World</div>
+<div class = "well well-lg">Hello World</div>
+<div class = "well well-sm">Hello World</div>
+<hr>
+<!--alert-->
+<div class = "alert alert-success" role ="alert">A success alert</div>
+<div class = "alert alert-info" role = "alert">An Information Alert</div>
+<div class = "alert alert-warning" role = "alert">A warning alert</div>
+<div class = "alert alert-danger" role = "alert">A danger alert</div>
+
+<div class = "alert alert-warning alert-dismissible" role="alert">
+<button type="button" class="close" data-dismiss="alert"><span>&times;</span>  You can close this alert</button>
 </div>
-<!--52:58 -->
 
+<div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:50%;">
+          50%
+        </div>
+      </div>
 
+<hr>
+<!--Labels-->
+<span class="label label-default">Default</span>
+<h1>Hello<span class = "label label-primary">Primary</h1>
+<span class = "label label-success">Success</span>
+<span class = "label label-info">Info</span>
+<span class = "label label-warning">Warning</span>
+<span class = "label label-danger"> Danger</span>
+
+<!-- BADGES -->
+      <a href="#">Inbox <span class="badge">50</span></a>
+
+      <button class="btn btn-primary" type="button">
+        Messages <span class="badge">2</span>
+      </button>
+    </div>
+
+    <!-- IMAGES -->
+    <div class="container">
+      <img class="thumbnail" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150">
+      <img class="img-rounded" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150"><br><br>
+      <img class="img-circle" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150">
+    </div>
+
+    <hr>
+
+    <!-- GRIDS -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-8 col-xs-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+        <div class="col-md-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+        <div class="col-md-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+        <div class="col-md-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box</h3>
+        </div>
+      </div>
+</div>
 
   <div style = "height:400px"></div>
     <!-- Optional JavaScript -->
@@ -234,5 +404,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
   </body>
 </html>
